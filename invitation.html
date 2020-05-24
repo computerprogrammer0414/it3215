@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- JavaScript - Capella University -->
+<!-- Jaime C Smith -->
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script type="text/javascript" src="js/invitation.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html" class="active">Invitation</a>
+                </li>
+                <li><a href="volunteer.html">Volunteers</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form action="#">
+            <label for="recipientName">Recipient name:</label>
+            <input type="text" name="recipientNameInput" id="recipientNameInput" placeholder="Enter your Recipient Name" />
+
+            <label for="hostName">Host name:</label>
+            <input type="text" name="hostNameInput" id="hostNameInput" placeholder="Enter your Name" />
+
+            <input type="submit" value="Submit" onclick="replaceContent();return false;">
+        </form>
+    </section>
+
+
+    <article id="placeholderContent">
+        Hello <span id="recipientNamePlaceholder">recipientName</span>!
+        <br />
+        <br /> You have been invited to volunteer for an event held on July 1st. Please respond to this email to sign up
+        as a volunteer.
+        <br />
+        <br /> Thanks!
+        <br />
+        <br />
+        <span id="hostNamePlaceholder">hostName</span>
+    </article>
+    <footer>This events site is for IT3515 tasks.
+    </footer>
+</body>
+
+</html>

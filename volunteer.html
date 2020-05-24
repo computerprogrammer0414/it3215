@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Invitation Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+	<script type="text/javascript" src="js/volunteers.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+        </div>
+        <nav>
+            <ul class="topnav">
+                <li><a href="index.html">Home</a>
+                </li>
+                <li><a href="invitation.html" >Invitation</a>
+                </li>
+				<li><a href="volunteer.html" class="active">Volunteers</a>
+                </li>
+                <li><a href="gallery.html">Gallery</a>
+                </li>
+                <li><a href="registration.html">Registration</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+    <section id="pageForm">
+        <form action="#">
+
+			<h1>Volunteers</h1>
+			<div>
+				<label for="first_name">First Name:</label>
+				<input type="text" id="first_name">
+				
+				<label for="last_name">Last Name:</label>
+				<input type="text" id="last_name">
+			   
+
+				
+				<input type="button" id="add_button" value="Add Volunteer">
+				<input type="button" id="delete_button" value="Delete Volunteer">
+			</div>
+			<h2>Volunteer List</h2>
+			<textarea id="volunteerList" rows="10" cols="60"></textarea>
+			<div>
+
+				<input type="button" id="clear_button" value="Clear Volunteers">
+
+				<input type="button" id="sort_button" value="Sort By First Name">
+			</div>
+
+		</form>
+	</section>
+    <footer>This events site is for IT3515 tasks.
+    </footer>
+</body>
+
+</html>
