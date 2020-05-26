@@ -4,7 +4,7 @@
 <head>
     <title>Invitation Page</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-	<script type="text/javascript" src="js/volunteers.js"></script>
+    <script type="text/javascript" src="js/volunteers.js"></script>
 </head>
 
 <body>
@@ -16,9 +16,9 @@
             <ul class="topnav">
                 <li><a href="index.html">Home</a>
                 </li>
-                <li><a href="invitation.html" >Invitation</a>
+                <li><a href="invitation.html">Invitation</a>
                 </li>
-				<li><a href="volunteer.html" class="active">Volunteers</a>
+                <li><a href="volunteer.html" class="active">Volunteers</a>
                 </li>
                 <li><a href="gallery.html">Gallery</a>
                 </li>
@@ -29,32 +29,33 @@
         </nav>
     </header>
     <section id="pageForm">
-        <form action="#">
+        <form name="volunteer" action="#">
 
-			<h1>Volunteers</h1>
-			<div>
-				<label for="first_name">First Name:</label>
-				<input type="text" id="first_name">
-				
-				<label for="last_name">Last Name:</label>
-				<input type="text" id="last_name">
-			   
+            <h1>Volunteers</h1>
+            <div>
+                <label for="first_name">First Name:</label>
+                <input type="text" id="first_name">
+                <label for="last_name">Last Name:</label>
+                <input type="text" id="last_name">
 
-				
-				<input type="button" id="add_button" value="Add Volunteer">
-				<input type="button" id="delete_button" value="Delete Volunteer">
-			</div>
-			<h2>Volunteer List</h2>
-			<textarea id="volunteerList" rows="10" cols="60"></textarea>
-			<div>
 
-				<input type="button" id="clear_button" value="Clear Volunteers">
+                <input type="button" id="add_button" value="Add Volunteer">
+                <input type="button" id="delete_button" value="Delete Volunteer">
+            </div>
+            <h2>Volunteer List</h2>
+            <textarea id="volunteerList" rows="10" cols="60"></textarea>
+            <div>
 
-				<input type="button" id="sort_button" value="Sort By First Name">
-			</div>
+                <input type="button" id="clear_button" value="Clear Volunteers">
 
-		</form>
-	</section>
+                <input type="button" id="sort_button" value="Sort By First Name" onclick="sortlist">
+
+                <!-- Adding Sort Names by last name button to the page -->
+                <input type="button" id="sort_lbutton" value="Sort By Last Name" onclick="sortlistLastName">
+            </div>
+
+        </form>
+    </section>
     <footer>This events site is for IT3515 tasks.
     </footer>
 </body>
