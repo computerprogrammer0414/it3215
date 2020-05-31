@@ -51,12 +51,8 @@ var deleteVolunteer = function () {
   for (var i = volunteerArray.length - 1; i >= 0; i--) {
     if (volunteerArray[i] === volunteerString) {
       volunteerArray.splice(i, 1);
-    } else {
-      alert("Nothing to delete; Try Again!");
-      return false;
-     }
   }
-
+  }
   // display the volunteers and clear the add form
   displayVolunteers();
   // get the delete form ready for next entry
