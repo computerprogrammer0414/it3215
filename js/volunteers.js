@@ -1,4 +1,5 @@
 //When the page is fully loaded, the buttons will be mapped to the JavaScript functions
+//Jaime C Smith - Last Updated on 05/31/2020
 window.onload = function () {
   $('add_button').onclick = addVolunteer;
   $('delete_button').onclick = deleteVolunteer;
