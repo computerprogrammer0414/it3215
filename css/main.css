@@ -2,6 +2,8 @@ body {
     font: 15px arial, sans-serif;
     color: #808080;
 }
+
+
 input[type=text],
 select ,input[type=password],radio{
     width: 100%;
@@ -22,9 +24,9 @@ input[type=submit] ,input[type=button]{
     border-radius: 4px;
     cursor: pointer;
 }
-input[type=submit]:hover {
+/* input[type=submit]:hover ;input[type=button]:hover {
     background-color: #802F1E;
-}
+} */
 section {
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -137,6 +139,21 @@ div.gallery img {
 }
 
 div.desc {
-    padding: 15px;
+    
+    padding: 12px;
     text-align: center;
 }
+
+.preview {
+    width:760px;
+    height:360px}
+    
+    .thumb {
+    width:205px;
+    margin-right:3px;}
+    
+    .normal {
+    border:1px solid #000000;}
+    
+    .selected {
+    border:1px solid #ff0000;}
