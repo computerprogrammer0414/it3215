@@ -1,4 +1,4 @@
-var lastImg = 1; //Set initial thumbnail and preview
+let lastImg = 1; //Set initial thumbnail and preview
 document.getElementById(0).src = document.getElementById(lastImg).src;
 document.getElementById(lastImg).className = "thumb selected";
 
