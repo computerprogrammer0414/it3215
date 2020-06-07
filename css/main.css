@@ -157,14 +157,17 @@ div.desc {
 
 .preview {
     width:760px;
-    height:360px}
+    height:360px;
+}
+    
     
     .thumb {
     width:205px;
     margin-right:3px;}
     
     .normal {
-    border:1px solid #000000;}
+    border:1px solid #000000;
+}
     
     .selected {
     border:1px solid #ff0000;}

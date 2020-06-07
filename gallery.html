@@ -1,10 +1,16 @@
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
 <!DOCTYPE html>
 <html lang="en-US">
+
+<!-- ----------------------------------------------------------------------- -->
+<!--                               Jaime C Smith                             -->
+<!-- ----------------------------------------------------------------------- -->
 
 <head>
     <title>Gallery Page</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-  
+
 </head>
 
 <body>
@@ -18,9 +24,9 @@
                 </li>
                 <li><a href="invitation.html">Invitation</a>
                 </li>
-				<li><a href="volunteer.html">Volunteers</a>
+                <li><a href="volunteer.html">Volunteers</a>
                 </li>
-                <li><a href="gallery.html"  class="active">Gallery</a>
+                <li><a href="gallery.html" class="active">Gallery</a>
                 </li>
                 <li><a href="registration.html">Registration</a>
                 </li>
@@ -28,57 +34,40 @@
 
         </nav>
     </header>
+
+    <!-- ----------------------------------------------------------------------- -->
+    <!--                              Image Gallery                              -->
+    <!-- ----------------------------------------------------------------------- -->
     <section id="gallery">
+        <div>
+            <div class="gallery grey"><img id="1" class="thumb normal" src="images/firefighter.jpg" alt="mountains"
+                    width="300" height="200" onmouseover="preview(this)" />
+                <div class="desc">Volunteers are not paid --not because they are worthless, but because they are
+                    priceless.</div>
+            </div>
 
-         
-    <div >
-      <div class="gallery grey"><img id="1" class="thumb normal" src="images/firefighter.jpg" alt="mountains" width="300" height="200" onmouseover="preview(this)"/>
-      <div class="desc">Volunteers are not paid --not because they are worthless, but because they are priceless.</div>
-      </div>
-      
-      <div class="gallery grey"><img id="2" class="thumb normal" src="images/silhouette.jpg" alt="desert" width="300" height="200" onmouseover="preview(this)"/>
-      <div class="desc">Volunteer! Start where you are. Use what you have. Do what you can.</div>  
-      </div>
-      
-      <div class="gallery grey"><img id="3" class="thumb normal" src="images/work.jpg" alt="highway"  width="300" height="200" onmouseover="preview(this)"/>
-      <div class="desc">No act of kindness, no matter how small, is ever wasted. Thank you.</div>
-      </div>
+            <div class="gallery grey"><img id="2" class="thumb normal" src="images/silhouette.jpg" alt="desert"
+                    width="300" height="200" onmouseover="preview(this)" />
+                <div class="desc">Volunteer! Start where you are. Use what you have. Do what you can.</div>
+            </div>
+
+            <div class="gallery grey"><img id="3" class="thumb normal" src="images/work.jpg" alt="highway" width="300"
+                    height="200" onmouseover="preview(this)" />
+                <div class="desc">No act of kindness, no matter how small, is ever wasted. Thank you.</div>
+            </div>
 
 
-      <div class="gallery grey"><img id="4" class="thumb normal" src="images/event.jpg" alt="highway" width="300" height="200" onmouseover="preview(this)"/>
-      <div class="desc">Volunteers do not necessarily have the time; they have the heart.</div>
-      </div>
-      <br>
-      <div>
-      <img id="0" class="preview normal" src="" alt="preview" style="max-width: 100%; height: auto;" /><br />
-    </div>
-    </div>
-
-<!-- <div class="gallery">
-  <a target="_blank" href="images/event.jpg">
-    <img src="images/event.jpg" alt="event" width="300" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div> -->
-
+            <div class="gallery grey"><img id="4" class="thumb normal" src="images/event.jpg" alt="highway" width="300"
+                    height="200" onmouseover="preview(this)" />
+                <div class="desc">Volunteers do not necessarily have the time; they have the heart.</div>
+            </div>
+            <br>
+            <div>
+                <img id="0" class="preview normal" alt="preview" style="max-width: 100%; height: auto;" /><br />
+            </div>
+        </div>
     </section>
 
-
-
-   
-   <!--  <script>
-
-      var lastImg = 1; //Set initial thumbnail and preview
-      document.getElementById(0).src = document.getElementById(lastImg).src;
-      document.getElementById(lastImg).className = "thumb selected";
-  
-      function preview(img) {
-          document.getElementById(lastImg).className = "thumb normal";
-          img.className = "thumb selected";
-          document.getElementById(0).src = img.src;
-          lastImg = img.id
-      }
-  </script> -->
     <script type="text/javascript" src="js/gallery.js"></script>
 </body>
 
