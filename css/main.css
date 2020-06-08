@@ -3,17 +3,16 @@ body {
     color: #808080;
 }
 
-.grey {
+
+img {
     transition: filter .5s ease-in-out;
     -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(0%); /* FF 35+ */
   }
-  
-  .grey :hover {
+  img:hover {
     -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
     filter: grayscale(100%); /* FF 35+ */
   }
-
 
 input[type=text],
 select ,input[type=password],radio{
