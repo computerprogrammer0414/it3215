@@ -1,68 +1,108 @@
-<!DOCTYPE html>
 <html lang="en-US">
-
-<head>
-    <title>Invitation Page</title>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Registration</title>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-</head>
-
-<body>
+  </head>
+   <body>
     <header>
-        <div class="top">
-            <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
-        </div>
-        <nav>
-            <ul class="topnav">
-                <li><a href="index.html">Home</a>
-                </li>
-                <li><a href="invitation.html">Invitation</a>
-                </li>
-				<li><a href="volunteer.html">Volunteers</a>
-                </li>
-                <li><a href="gallery.html">Gallery</a>
-                </li>
-                <li><a href="registration.html" class="active">Registration</a>
-                </li>
-            </ul>
-
-        </nav>
+      <div class="top">
+        <a class="logo" href="index.html"
+          >CapellaVolunteers<span class="dotcom">.org</span></a
+        >
+      </div>
+      <nav>
+        <ul class="topnav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="invitation.html">Invitation</a></li>
+          <li><a href="volunteer.html">Volunteers</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="registration.html" class="active">Registration</a></li>
+        </ul>
+      </nav>
     </header>
     <section id="pageForm">
-        <form action="#">
-            <label for="userName">Username:</label>
-            <input type="text" name="userName" placeholder="Enter your Username" />
+      <form action="#">
+        <div class="inputWithIcon inputIconBg">
+          <label for="userName">Username:</label>
+          <input
+            type="text"
+            name="userName required"
+            placeholder="Enter your Username"
+          />
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
 
-            <label for="Password">Password:
-            </label>
-            <input type="password" name="password" placeholder="Enter your Password" />
+        <div class="inputWithIcon inputIconBg">
+          <label for="Password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Enter your Password"
+          />
+          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
 
-            <label for="passwordVerify">Verify your Password:
-            </label>
-            <input type="password" name="passwordVerify" placeholder="Enter in your Password again" />
+        <div class="inputWithIcon inputIconBg">
+          <label for="passwordVerify">Verify your Password:</label>
+          <input
+            type="password"
+            name="passwordVerify"
+            placeholder="Enter in your Password again"
+          />
+          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
 
-            <label for="firstName">First Name:
-            </label>
-            <input type="text" name="firstName" placeholder="Enter your First Name" />
+        <div class="inputWithIcon inputIconBg">
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="Enter your First Name"
+          />
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
 
-            <label for="hostName">Last Name:
-            </label>
-            <input type="text" name="lastName" placeholder="Enter your Last Name" />
-            <label for="email">Email:
-            </label>
-            <input type="text" name="email" placeholder="Enter your Email Address" />
-			<label for="phoneNumber">Phone Number
-            </label>
-            <input type="text" name="lastName" placeholder="Enter your Phone Number" />
-			<label for="signUpNewsletter">Sign up for newsletter:
-            </label>
-			  <input type="radio" name="signUpNewsletter" value="Yes" checked> Yes 
-				<input type="radio" name="signUpNewsletter" value="No"> No
-            <input type="submit" value="Next step">
-        </form>
+        <div class="inputWithIcon inputIconBg">
+          <label for="hostName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Enter your Last Name"
+          />
+          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+
+        <div class="inputWithIcon inputIconBg">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            placeholder="Enter your Email Address"
+          />
+          <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+
+        <div class="inputWithIcon inputIconBg">
+          <label for="phoneNumber">Phone Number</label>
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Enter your Phone Number"
+          />
+          <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+        </div>
+
+        <label for="signUpNewsletter">Sign up for newsletter:</label>
+        <input type="radio" name="signUpNewsletter" value="Yes" checked /> Yes
+        <input type="radio" name="signUpNewsletter" value="No" /> No
+        <input type="submit" value="Next step" />
+      </form>
     </section>
 
-    <footer>This events site is for IT3515 tasks.
-    </footer>
-</body>
-
+    <footer>This events site is for IT3515 tasks.</footer>
+  </body>
 </html>
