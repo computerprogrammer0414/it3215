@@ -7,5 +7,6 @@ function nextStep() {
   document.cookie = "email=" + document.getElementsByName("email")[0].value;
   document.cookie = "phoneNumber=" + document.getElementsByName("phone")[0].value;
   document.cookie = "signUpNewsletter=" + document.getElementsByName("newsletter")[0].value;
- 
+
 }
+
