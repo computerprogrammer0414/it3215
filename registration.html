@@ -1,108 +1,107 @@
 ﻿<html lang="en-US">
 
-  <!-- ----------------------------------------------------------------------- -->
-  <!--                               Jaime C Smith                             -->
-  <!-- ----------------------------------------------------------------------- -->
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <title>Registration</title>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-  </head>
-   <body>
-    <header>
-      <div class="top">
-        <a class="logo" href="index.html"
-          >CapellaVolunteers<span class="dotcom">.org</span></a
-        >
-      </div>
-      <nav>
-        <ul class="topnav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="invitation.html">Invitation</a></li>
-          <li><a href="volunteer.html">Volunteers</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="registration.html" class="active">Registration</a></li>
-        </ul>
-      </nav>
-    </header>
 <!-- ----------------------------------------------------------------------- -->
-<!--                        SECTION FOR THE WEB FORM                         -->
+<!--                               Jaime C Smith                             -->
 <!-- ----------------------------------------------------------------------- -->
-<!-- ----------------------------------------------------------------------- -->
-<!--                Calling the function nextStep() on submit                -->
-<!-- ----------------------------------------------------------------------- -->
-    <section id="pageForm">
-      <form action="confirm.html" onsubmit="return nextStep()">
-<!-- -------------------------- USERNAME SECTION --------------------------- -->
-        <div class="inputWithIcon inputIconBg">
-          <label for="userName">Username:</label>
-          <input type="text" name="username" placeholder="Enter your Username"/>
-          <span class="error hide"></span>
-          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-        <hr>
-<!-- -------------------------- PASSWORD SECTION --------------------------- -->
-        <div class="inputWithIcon inputIconBg">
-          <label for="Password">Password:</label>
-          <input type="checkbox" onclick="showpassword()">Show Password
-          <input type="password" name="password" id="password" placeholder="Enter your Password" onkeyup="validatePassword();"/>
-          <span class="error hide"></span>
-          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-<!-- ----------------------- VERIFY PASSWORD SECTION ----------------------- -->
-        <div class="inputWithIcon inputIconBg">
-          <label for="passwordVerify">Verify your Password:</label>
-          <input type="checkbox" onclick="showpassword2()">Show Password
-          <input type="password" name="passwordcheck" id="passwordcheck"placeholder="Enter in your Password again"onkeyup="validatePassword();"/>
-          <span class="error hide"></span>
-          <span id="confirm-message2" class="confirm-message"></span>
-          <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-        <hr>  
-<!-- ------------------------- FIRST NAME SECTION -------------------------- -->
-        <div class="inputWithIcon inputIconBg">
-          <label for="firstName">First Name:</label>
-          <input type="text" name="firstname" placeholder="Enter your First Name"/>
-          <span class="error hide"></span>
-          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-<!-- -------------------------- LAST NAME SECTION -------------------------- -->
-        <div class="inputWithIcon inputIconBg">
-          <label for="lastName">Last Name:</label>
-          <input type="text" name="lastname" placeholder="Enter your Last Name"/>
-          <span class="error hide"></span>
-          <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-<!-- ---------------------------- EMAIL SECTION ---------------------------- -->
-        <div class="inputWithIcon inputIconBg">
-          <label for="email">Email:</label>
-          <input type="text" name="email" placeholder="Enter your Email Address"/>
-          <span class="error hide"></span>
-          <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-<!-- ------------------------ PHONE NUMBER SECTION ------------------------- -->
-        <div class="inputWithIcon inputIconBg ">
-          <label for="phoneNumber">Phone Number</label>
-          <input type="text" name="phone" placeholder="Enter your Phone Number"/>
-          <span class="error hide"></span>
-          <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
-        </div>
-<!-- ---------------------- NEWSLETTER SIGNUP SECTION ---------------------- -->
-        <label for="signUpNewsletter">Sign up for newsletter:</label>
-        <input type="radio" name="newsletter"  value="Subscribed" checked /> Yes
-        <input type="radio" name="newsletter"  value="Not_Subscribed" /> No
-<!-- ------------------------ SUBMIT BUTTON SECTION ------------------------ -->
-        <input type="submit" value="Submit" id="btnSubmit" />
-      </form>
-    </section>
 
-    <footer>This events site is for IT3515 tasks.</footer>
-    <script type="text/javascript" src="js/formvalidator.js"></script>
-    <script type="text/javascript" src="js/passwordcheck.js"></script>
-    <script type="text/javascript" src="js/cookies.js"></script>
-  </body>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <title>Registration</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+  <header>
+    <div class="top">
+      <a class="logo" href="index.html">CapellaVolunteers<span class="dotcom">.org</span></a>
+    </div>
+    <nav>
+      <ul class="topnav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="invitation.html">Invitation</a></li>
+        <li><a href="volunteer.html">Volunteers</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="registration.html" class="active">Registration</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                        SECTION FOR THE WEB FORM                         -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!-- ----------------------------------------------------------------------- -->
+  <!--                Calling the function nextStep() on submit                -->
+  <!-- ----------------------------------------------------------------------- -->
+  <section id="pageForm">
+    <form action="confirm.html" onsubmit="return nextStep()" method="GET">
+      <!-- -------------------------- USERNAME SECTION --------------------------- -->
+      <div class="inputWithIcon inputIconBg">
+        <label for="userName">Username:</label>
+        <input type="text" name="username" placeholder="Enter your Username" />
+        <span class="error hide"></span>
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <hr>
+      <!-- -------------------------- PASSWORD SECTION --------------------------- -->
+      <div class="inputWithIcon inputIconBg">
+        <label for="Password">Password:</label>
+        <input type="checkbox" onclick="showpassword()">Show Password
+        <input type="password" name="password" id="password" placeholder="Enter your Password"
+          onkeyup="validatePassword();" />
+        <span class="error hide"></span>
+        <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <!-- ----------------------- VERIFY PASSWORD SECTION ----------------------- -->
+      <div class="inputWithIcon inputIconBg">
+        <label for="passwordVerify">Verify your Password:</label>
+        <input type="checkbox" onclick="showpassword2()">Show Password
+        <input type="password" name="passwordcheck" id="passwordcheck" placeholder="Enter in your Password again"
+          onkeyup="validatePassword();" />
+        <span class="error hide"></span>
+        <span id="confirm-message2" class="confirm-message"></span>
+        <i class="fa fa-lock fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <hr>
+      <!-- ------------------------- FIRST NAME SECTION -------------------------- -->
+      <div class="inputWithIcon inputIconBg">
+        <label for="firstName">First Name:</label>
+        <input type="text" name="firstname" placeholder="Enter your First Name" />
+        <span class="error hide"></span>
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <!-- -------------------------- LAST NAME SECTION -------------------------- -->
+      <div class="inputWithIcon inputIconBg">
+        <label for="lastName">Last Name:</label>
+        <input type="text" name="lastname" placeholder="Enter your Last Name" />
+        <span class="error hide"></span>
+        <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <!-- ---------------------------- EMAIL SECTION ---------------------------- -->
+      <div class="inputWithIcon inputIconBg">
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Enter your Email Address" />
+        <span class="error hide"></span>
+        <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <!-- ------------------------ PHONE NUMBER SECTION ------------------------- -->
+      <div class="inputWithIcon inputIconBg ">
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" name="phone" placeholder="Enter your Phone Number" />
+        <span class="error hide"></span>
+        <i class="fa fa-phone fa-lg fa-fw" aria-hidden="true"></i>
+      </div>
+      <!-- ---------------------- NEWSLETTER SIGNUP SECTION ---------------------- -->
+      <label for="signUpNewsletter">Sign up for newsletter:</label>
+      <input type="radio" name="newsletter" value="Subscribed" checked /> Yes
+      <input type="radio" name="newsletter" value="Not_Subscribed" /> No
+      <!-- ------------------------ SUBMIT BUTTON SECTION ------------------------ -->
+      <input type="submit" value="Submit" id="btnSubmit" />
+    </form>
+  </section>
+
+  <footer>This events site is for IT3515 tasks.</footer>
+  <script type="text/javascript" src="js/formvalidator.js"></script>
+  <script type="text/javascript" src="js/passwordcheck.js"></script>
+  <script type="text/javascript" src="js/cookies.js"></script>
+</body>
+
 </html>
-© 2020 GitHub, Inc.
